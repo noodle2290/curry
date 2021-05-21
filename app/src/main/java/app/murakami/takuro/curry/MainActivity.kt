@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     val people = arrayOf("くま","ひつじ","ねこ","ねずみ")
     val food = arrayOf("かれー","みそしる","ちゃーはん","えびちり","はんばーぐ","からあげ","おこのみやき","クリームシチュー")
-
+    val yosoe = arrayOf("よそえました^^","よそえませんでした")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,12 +26,12 @@ class MainActivity : AppCompatActivity() {
 
         foodTextView.text = food[Random.nextInt(8)]  + "を"
 
-        if (Random.nextInt(100)<50){
-            verbTextView.text = "よそえました^^"
+        verbTextView.text = yosoe[Random.nextInt(2)]
+
+        if (verbTextView.text == food[0]){
             verbTextView.setTextSize(14f)
         }
         else{
-            verbTextView.text = "よそえませんでした"
             verbTextView.setTextSize(20f)
         }
 

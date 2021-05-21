@@ -69,6 +69,8 @@
                     android:id="@+id/nameTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#FA5C5C"
+                    android:backgroundTint="#FA6161"
                     android:gravity="center"
                     android:text="名前" />
 
@@ -76,6 +78,7 @@
                     android:id="@+id/foodTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#CCFB75"
                     android:gravity="center"
                     android:text="食べ物" />
             </LinearLayout>
@@ -91,6 +94,7 @@
                     android:id="@+id/verbTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#FFE881"
                     android:gravity="center"
                     android:text="よそえました！"
                     android:textSize="14sp" />
